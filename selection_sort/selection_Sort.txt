@@ -1,0 +1,74 @@
+🟢 Selection Sort Algorithm (Step-by-Step Points)
+🔹 What is Selection Sort?
+
+Selection Sort works by:
+
+Selecting the minimum element
+
+Placing it at the beginning
+
+Repeating for the remaining array
+
+Unlike Bubble Sort, it does fewer swaps.
+
+🟡 Selection Sort Algorithm Steps
+
+You can paste this in your repo 👇
+
+1️⃣ Start from index 0.
+2️⃣ Assume the current index has the minimum element.
+3️⃣ Compare this element with all remaining elements.
+4️⃣ If a smaller element is found:
+
+Update the minimum index.
+
+5️⃣ After completing inner loop:
+
+Swap the smallest element with the current index.
+
+6️⃣ Move to next index and repeat.
+7️⃣ Stop when array is fully sorted.
+
+🔵 Example
+
+Array:
+
+[5, 1, 4, 2, 8]
+Pass 1:
+
+Minimum = 1
+Swap with 5
+→ [1, 5, 4, 2, 8]
+
+Pass 2:
+
+Minimum = 2
+Swap with 5
+→ [1, 2, 4, 5, 8]
+
+Pass 3:
+
+Minimum = 4
+No change
+
+Pass 4:
+
+Minimum = 5
+No change
+
+Sorted ✅
+
+🔵 Selection Sort Code (Clean Version)
+def selection_sort(arr):
+    n = len(arr)
+
+    for i in range(n):
+        min_index = i
+
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+    return arr
