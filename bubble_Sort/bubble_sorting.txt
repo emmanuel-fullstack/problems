@@ -24,4 +24,18 @@ After each pass, one element gets fixed at the end.
 All elements are sorted
 OR
 
-No swaps occur in a pass (optimized version).
+No swaps occur in a pass (optimized version). 
+
+
+code implementation
+_____________________________
+
+def bubble_sort(arr):
+    n = len(arr)
+
+    for i in range(n):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    return arr
