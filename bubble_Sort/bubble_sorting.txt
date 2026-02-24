@@ -1,0 +1,27 @@
+Bubble Sort Algorithm Steps (Points Format)
+
+You can directly paste this into your GitHub README 👇
+
+1️⃣ Start from the first element of the array.
+2️⃣ Compare the current element with the next element.
+3️⃣ If the current element is greater than the next element:
+
+Swap them.
+
+4️⃣ Move to the next pair of adjacent elements.
+5️⃣ Continue this process until the end of the array.
+
+This completes one pass.
+
+The largest element is now placed at the end.
+
+6️⃣ Repeat the same process for the remaining unsorted portion.
+
+After each pass, one element gets fixed at the end.
+
+7️⃣ Stop when:
+
+All elements are sorted
+OR
+
+No swaps occur in a pass (optimized version).
